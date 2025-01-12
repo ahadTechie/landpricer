@@ -21,6 +21,7 @@ public class LpUserSignupTest extends BaseTest {
 //		int count = getCountAndIncrement("count.txt");
 		GoogleSheetsUtility gsu = new GoogleSheetsUtility();
 		int count = gsu.getCountAndIncrement("1h__tOiRfJ_Ee8jAk3-G24OK4Kl9IrjWJa3TjEa8P0W0", "Sheet1!A1");
+		
 		// Dynamic Test Data
 		String email = "testinguser" + count + "@yopmail.com";
 		String fullName = "Test User";
@@ -78,26 +79,8 @@ public class LpUserSignupTest extends BaseTest {
 		String actualTitle = HelperMethods.getCurrentPageUrl(driver);
 		Assert.assertEquals(actualTitle, "https://dev.d3dgb06idadf3m.amplifyapp.com/user/chat",
 				"The landing URL of the chat page is not correct!");
+		System.out.println("Successfully landed on the chat screen");
 	}
 
-	// Utility Method to Read and Increment Count
-	private int getCountAndIncrement(String filePath) {
-		int currentCount = 0;
-		int newCount = 0;
 
-		try {
-			Path path = Paths.get(filePath);
-			if (Files.exists(path)) {
-				String content = Files.readString(path).trim();
-				currentCount = Integer.parseInt(content);
-			}
-			newCount = currentCount + 1;
-			Files.writeString(path, String.valueOf(newCount));
-			System.out.println("Updated count saved to file: " + newCount);
-		} catch (IOException | NumberFormatException e) {
-			System.out.println("Error handling count file: " + e.getMessage());
-		}
-
-		return currentCount;
-	}
 }
