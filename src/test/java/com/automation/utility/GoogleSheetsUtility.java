@@ -20,7 +20,7 @@ public class GoogleSheetsUtility {
 
     private static final String APPLICATION_NAME = "Google Sheets Integration";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
-    private static final String CREDENTIALS_FILE_PATH = "/Users/abdulahad/eclipse-workspace/seleniumAutomation/cosmic-palace-427009-h8-6bac3278d8dd.json";
+    private static final String CREDENTIALS_FILE_PATH = "/Users/abdulahad/eclipse-workspace/seleniumAutomation/cosmic-palace-427009-h8-f358ad26869d.json";
 
     // Utility Method to Read and Increment Count from Google Sheets
     public  int getCountAndIncrement(String spreadsheetId, String range) {
