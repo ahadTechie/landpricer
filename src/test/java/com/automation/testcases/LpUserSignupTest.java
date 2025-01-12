@@ -80,21 +80,22 @@ public class LpUserSignupTest extends BaseTest {
 
 	// Utility Method to Read and Increment Count
 	private int getCountAndIncrement(String filePath) {
-		int count = 0;
+		int currentCount = 0;
+		int newCount = 0;
 
 		try {
 			Path path = Paths.get(filePath);
 			if (Files.exists(path)) {
 				String content = Files.readString(path).trim();
-				count = Integer.parseInt(content);
+				currentCount = Integer.parseInt(content);
 			}
-			count++;
-			Files.writeString(path, String.valueOf(count));
-			System.out.println("Updated count saved to file: " + count);
+			newCount = currentCount + 1;
+			Files.writeString(path, String.valueOf(newCount));
+			System.out.println("Updated count saved to file: " + newCount);
 		} catch (IOException | NumberFormatException e) {
 			System.out.println("Error handling count file: " + e.getMessage());
 		}
 
-		return count;
+		return currentCount;
 	}
 }
