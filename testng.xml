@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.automation.utility.ITestListenerClass" />
+    </listeners>
+    <!--  <test thread-count="5" name="Login TestCase">
+        <classes>
+            <class name="com.automation.testcases.AdminLoginTest">
+                <methods>
+                    <include name="redirectToTheAdminLogin" />
+                    <include name="submitWithoutAnyInfo" />
+                    <include name="testingeachfieldRegex" />
+                    <include name="submitCorrectAdminCreds" />
+                    <include name="confirmingAdminLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test>Test -->
+   	<test name="Sign Up TestCase">
+		<classes>
+			<class name="com.automation.testcases.LpUserSignupTest">
+				<methods>
+					<include name="LpAccountCreation" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

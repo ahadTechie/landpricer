@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.automation.utility.ITestListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Sign Up TestCase(failed)">
+    <classes>
+      <class name="com.automation.testcases.LpUserSignupTest">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="setUp"/>
+          <include name="LpAccountCreation"/>
+        </methods>
+      </class> <!-- com.automation.testcases.LpUserSignupTest -->
+    </classes>
+  </test> <!-- Sign Up TestCase(failed) -->
+</suite> <!-- Failed suite [Suite] -->
