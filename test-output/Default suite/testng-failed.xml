@@ -7,6 +7,7 @@
         <methods>
           <include name="setUpSuite"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="LpAccountCreation"/>
         </methods>
       </class> <!-- com.automation.testcases.LpUserSignupTest -->
