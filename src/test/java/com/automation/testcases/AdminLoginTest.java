@@ -1,5 +1,7 @@
 package com.automation.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.Set;
 
 import org.openqa.selenium.Cookie;
@@ -27,7 +29,7 @@ public class AdminLoginTest extends BaseTest {
 	@Test
 	public void redirectToTheAdminLogin() {
 		driver.get("https://shelters.catalystpet.com/adminLogin");
-		Assert.assertEquals(HelperMethods.getCurrentPageUrl(driver), "https://shelters.catalystpet.com/adminLogin");
+		AssertJUnit.assertEquals(HelperMethods.getCurrentPageUrl(driver), "https://shelters.catalystpet.com/adminLogin");
 	}
 
 	@Test
@@ -71,7 +73,7 @@ public class AdminLoginTest extends BaseTest {
 	@Test
 	public void confirmingAdminLogin() {
 		System.out.println("confirmingAdminLogin");
-		Assert.assertEquals(HelperMethods.getCurrentPageUrl(driver),
+		AssertJUnit.assertEquals(HelperMethods.getCurrentPageUrl(driver),
 				"https://shelters.catalystpet.com/admin/dashboard");
 	}
 

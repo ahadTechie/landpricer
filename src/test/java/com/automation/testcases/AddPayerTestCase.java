@@ -1,5 +1,8 @@
 package com.automation.testcases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -16,6 +19,7 @@ public class AddPayerTestCase extends BaseTest {
 	WebDriver driver;
 	AddPayerPage addPayerPage;
 
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() {
 		driver = new ChromeDriver();
@@ -107,6 +111,7 @@ public class AddPayerTestCase extends BaseTest {
 		}
 	}
 
+	@AfterMethod
 	@AfterClass
 	public void tearDown() {
 		// Close the browser

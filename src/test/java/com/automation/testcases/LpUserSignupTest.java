@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.automation.page.AdminLoginPage;
 import com.automation.page.BaseTest;
 import com.automation.page.LpUserSgnupPage;
+import com.automation.utility.GoogleSheetsUtility;
 import com.automation.utility.HelperMethods;
 
 public class LpUserSignupTest extends BaseTest {
@@ -17,8 +18,9 @@ public class LpUserSignupTest extends BaseTest {
 	public void LpAccountCreation() throws InterruptedException {
 		LpUserSgnupPage lpUserSignupPage = new LpUserSgnupPage(driver);
 		// Utility Method to Handle Count File
-		int count = getCountAndIncrement("count.txt");
-
+//		int count = getCountAndIncrement("count.txt");
+		GoogleSheetsUtility gsu = new GoogleSheetsUtility();
+		int count = gsu.getCountAndIncrement("1h__tOiRfJ_Ee8jAk3-G24OK4Kl9IrjWJa3TjEa8P0W0", "Sheet1!A1");
 		// Dynamic Test Data
 		String email = "testinguser" + count + "@yopmail.com";
 		String fullName = "Test User";
