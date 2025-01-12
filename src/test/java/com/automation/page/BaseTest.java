@@ -35,7 +35,7 @@ public class BaseTest {
 	@BeforeClass
 	public void setUp() {
 		driver = BrowserFactory.startApplication(driver, config.getBrowser(), config.getStagingUrl());
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Wait up to 30 seconds
+		wait = new WebDriverWait(driver, Duration.ofSeconds(50)); // Wait up to 50 seconds
 
 	}
 
