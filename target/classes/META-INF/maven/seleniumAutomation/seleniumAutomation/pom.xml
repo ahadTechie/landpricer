@@ -143,5 +143,18 @@
 
 	</dependencies>
 
-
+	<profiles>
+		<profile>
+			<id>local</id>
+			<properties>
+				<google.credentials>/path/to/local/credentials.json</google.credentials>
+			</properties>
+		</profile>
+		<profile>
+			<id>jenkins</id>
+			<properties>
+				<google.credentials>${env.GCP_CREDENTIALS_FILE}</google.credentials>
+			</properties>
+		</profile>
+	</profiles>
 </project>
