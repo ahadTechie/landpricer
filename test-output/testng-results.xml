@@ -2,61 +2,28 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-13T22:25:40 PKT" name="Default suite" finished-at="2025-01-13T22:26:54 PKT" duration-ms="73534">
+  <suite started-at="2025-01-13T22:56:09 PKT" name="Default suite" finished-at="2025-01-13T22:56:19 PKT" duration-ms="10447">
     <groups>
     </groups>
-    <test started-at="2025-01-13T22:25:40 PKT" name="Default test" finished-at="2025-01-13T22:26:54 PKT" duration-ms="73534">
+    <test started-at="2025-01-13T22:56:09 PKT" name="Default test" finished-at="2025-01-13T22:56:19 PKT" duration-ms="10447">
       <class name="com.automation.testcases.LpUserSignupTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.testcases.LpUserSignupTest@609cd4d8]" started-at="2025-01-13T22:25:40 PKT" name="setUpSuite" finished-at="2025-01-13T22:25:40 PKT" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.testcases.LpUserSignupTest@609cd4d8]" started-at="2025-01-13T22:56:09 PKT" name="setUpSuite" finished-at="2025-01-13T22:56:09 PKT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.LpUserSignupTest@609cd4d8]" started-at="2025-01-13T22:25:40 PKT" name="setUp" finished-at="2025-01-13T22:26:29 PKT" duration-ms="48273" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.LpUserSignupTest@609cd4d8]" started-at="2025-01-13T22:56:09 PKT" name="setUp" finished-at="2025-01-13T22:56:19 PKT" duration-ms="10245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LpAccountCreation()[pri:0, instance:com.automation.testcases.LpUserSignupTest@609cd4d8]" started-at="2025-01-13T22:26:29 PKT" name="LpAccountCreation" finished-at="2025-01-13T22:26:54 PKT" duration-ms="25087" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.1.1', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61496d1fe75e0ea74aa3588f73d53768, findElement {using=xpath, value=/html/body/div[1]/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/form/div/div[5]/button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: /var/folders/zp/qs3hb64n291...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61693}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61693/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61496d1fe75e0ea74aa3588f73d53768]]>
-            </message>
+        <test-method signature="LpAccountCreation()[pri:0, instance:com.automation.testcases.LpUserSignupTest@609cd4d8]" started-at="2025-01-13T22:56:19 PKT" name="LpAccountCreation" finished-at="2025-01-13T22:56:19 PKT" duration-ms="51" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.26.0', revision: '8ccf0219d7'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.1.1', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61496d1fe75e0ea74aa3588f73d53768, findElement {using=xpath, value=/html/body/div[1]/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div/form/div/div[5]/button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: /var/folders/zp/qs3hb64n291...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61693}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61693/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61496d1fe75e0ea74aa3588f73d53768
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-at com.automation.page.LpUserSgnupPage.clickSecondNextButton(LpUserSgnupPage.java:134)
-at com.automation.testcases.LpUserSignupTest.LpAccountCreation(LpUserSignupTest.java:59)
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:151)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at com.automation.utility.GoogleSheetsUtility.getSheetsService(GoogleSheetsUtility.java:65)
+at com.automation.utility.GoogleSheetsUtility.getCountAndIncrement(GoogleSheetsUtility.java:32)
+at com.automation.testcases.LpUserSignupTest.LpAccountCreation(LpUserSignupTest.java:23)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -85,11 +52,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LpAccountCreation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.LpUserSignupTest@609cd4d8]" started-at="2025-01-13T22:26:54 PKT" name="tearDown" finished-at="2025-01-13T22:26:54 PKT" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.LpUserSignupTest@609cd4d8]" started-at="2025-01-13T22:56:19 PKT" name="tearDown" finished-at="2025-01-13T22:56:19 PKT" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

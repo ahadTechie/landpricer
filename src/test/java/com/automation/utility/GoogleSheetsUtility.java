@@ -20,10 +20,12 @@ public class GoogleSheetsUtility {
 
     private static final String APPLICATION_NAME = "Google Sheets Integration";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
-    private static final String CREDENTIALS_FILE_PATH = System.getProperty("google.credentials");
+
+    // Fetch credentials path from the environment variable GOOGLE_APPLICATION_CREDENTIALS
+    private static final String CREDENTIALS_FILE_PATH = System.getenv("GOOGLE_APPLICATION_CREDENTIALS");
 
     // Utility Method to Read and Increment Count from Google Sheets
-    public  int getCountAndIncrement(String spreadsheetId, String range) {
+    public int getCountAndIncrement(String spreadsheetId, String range) {
         int currentCount = 0;
         int newCount = 0;
 
@@ -62,6 +64,10 @@ public class GoogleSheetsUtility {
 
     // Method to initialize Google Sheets API client
     private Sheets getSheetsService() throws IOException, GeneralSecurityException {
+        if (CREDENTIALS_FILE_PATH == null || CREDENTIALS_FILE_PATH.isEmpty()) {
+            throw new IllegalArgumentException("The GOOGLE_APPLICATION_CREDENTIALS environment variable is not set.");
+        }
+
         GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(CREDENTIALS_FILE_PATH))
                 .createScoped(Collections.singletonList(SheetsScopes.SPREADSHEETS));
         return new Sheets.Builder(GoogleNetHttpTransport.newTrustedTransport(), JSON_FACTORY, new HttpCredentialsAdapter(credentials))
